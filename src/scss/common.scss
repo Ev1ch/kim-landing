@@ -1,3 +1,10 @@
 * {
     box-sizing: border-box;
 }
+
+.section {
+    &__title {
+        margin-top: 0;
+        font: var(--title-font);
+    }
+}
