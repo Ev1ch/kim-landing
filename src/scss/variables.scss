@@ -1,10 +1,10 @@
 :root {
     --base-font-family: 'Montserrat', sans-serif;
 
-    --title-font: 500 var(--base-font-family) 20px;
-    --base-font: 400 var(--base-font-family) 15px;
-    --navigation-font: 700 var(--base-font-family) 14px;
-    --button-font: 700 var(--base-font-family) 14px;
+    --title-font: 500 20px var(--base-font-family);
+    --base-font: 400 15px var(--base-font-family);
+    --navigation-font: 700 14px var(--base-font-family);
+    --button-font: 700 14px var(--base-font-family);
 
     --accent-color: #c4ac54;
     --light-accent-color: #ece4c7;
