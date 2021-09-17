@@ -1,0 +1,24 @@
+@import '../components/platform-feature';
+
+.platform-description {
+    background-color: var(--cold-color);
+
+    &__section {
+        padding: 80px 60px;
+
+        &--fluid {
+            padding-top: 60px;
+            padding-bottom: 60px;
+
+            .advantage {
+                &__title {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    &__divider {
+        background-color: var(--accent-color);
+    }
+}
