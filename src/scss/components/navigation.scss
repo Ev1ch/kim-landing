@@ -1,0 +1,16 @@
+.navigation {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+
+    &__link {
+        font: var(--navigation-font);
+        color: var(--dark-color);
+        text-decoration: none;
+
+        &--active {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+    }
+}

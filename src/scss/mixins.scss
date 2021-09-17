@@ -1,0 +1,41 @@
+@mixin button($isFilled, $fontColor, $backgroundColor: $fontColor) {
+    text-align: center;
+    padding: 10px 20px;
+    color: $fontColor;
+    border-radius: 10px;
+    font: var(--button-font);
+    display: inline-block;
+    text-decoration: none;
+
+    @if $isFilled {
+        background-color: $backgroundColor;
+    } @else {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    border: 3px solid $backgroundColor;
+}
+
+@mixin select($isFilled, $fontColor, $backgroundColor: $fontColor) {
+    text-align-last: center;
+    padding: 10px 20px;
+    color: $fontColor;
+    border-radius: 10px;
+    font: var(--button-font);
+    display: inline-block;
+    list-style-type: none;
+    appearance: none;
+    box-shadow: none;
+
+    @if $isFilled {
+        background-color: $backgroundColor;
+
+        &__option {
+            background-color: $backgroundColor;
+        }
+    } @else {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    border: 3px solid $backgroundColor;
+}
