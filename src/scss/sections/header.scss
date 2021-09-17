@@ -13,7 +13,7 @@
         padding-bottom: 20px;
         margin-bottom: 20px;
 
-        .change-lang {
+        .change-lang-select {
             @include select(false, var(--accent-color));
         }
 
