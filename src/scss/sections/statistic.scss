@@ -1,0 +1,28 @@
+@import '../components/statistic-table';
+@import '../components/prices-table';
+
+.statistic {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__title {
+        text-align: center;
+        color: var(--accent-color);
+    }
+
+    &__text {
+        margin-bottom: 40px;
+
+        p {
+            font: var(--base-font);
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+
+            &:not(:last-of-type) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.statistic-table {
+    background-color: var(--light-accent-color);
+    padding: 20px;
+
+    &__row {
+        width: 100%;
+        display: flex;
+        flex-basis: 50%;
+        padding-top: 9.5px;
+        padding-bottom: 9.5px;
+
+        &:not(:last-of-type) {
+            border-bottom: 2px solid var(--accent-color);
+        }
+    }
+
+    &__criteria,
+    &__value {
+        flex: 1;
+    }
+
+    &__criteria {
+        font: 400 14px var(--base-font-family);
+    }
+
+    &__value {
+        text-transform: uppercase;
+        color: var(--accent-color);
+        font: var(--subtitle-font);
+    }
+}
