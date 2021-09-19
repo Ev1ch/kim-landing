@@ -1,0 +1,33 @@
+@import '../mixins';
+
+.early-access {
+    position: relative;
+    height: 515px;
+    background-color: rgba(var(--dark-color-rgb), 0.5);
+
+    &__title {
+        margin-bottom: 10px;
+        color: var(--accent-color);
+    }
+
+    &__description {
+        position: absolute;
+        bottom: 80px;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .early-access-button {
+            @include button(true, var(--dark-color), var(--accent-color));
+        }
+    }
+
+    &__text {
+        margin-bottom: 40px;
+
+        p {
+            font: 500 15px var(--base-font-family);
+            color: var(--contrast-light-color);
+        }
+    }
+}
