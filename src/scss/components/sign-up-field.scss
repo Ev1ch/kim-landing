@@ -1,0 +1,34 @@
+.sign-up-field {
+    display: grid;
+    grid-template-columns: 185px 75px;
+    width: 260px;
+    border: 1px solid var(--accent-color);
+    border-radius: 20px;
+    align-items: center;
+    box-sizing: content-box;
+
+    &__input {
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        outline: none;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        border: none;
+        font: 400 14px var(--base-font-family);
+        color: rgba(var(--dark-color-rgb), 0.5);
+        box-sizing: content-box;
+    }
+
+    &__button {
+        text-align: center;
+        white-space: nowrap;
+        padding: 10px;
+        border-radius: 20px;
+        border: none;
+        background-color: var(--dark-color);
+        color: var(--accent-color);
+        font: 500 14px var(--base-font-family);
+        box-sizing: content-box;
+    }
+}

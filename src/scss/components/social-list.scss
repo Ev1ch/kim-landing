@@ -1,0 +1,19 @@
+.social-list {
+    display: inline-flex;
+    padding-left: 0;
+    margin-top: 15px;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+    list-style-type: none;
+
+    &__item {
+        &:not(:first-of-type) {
+            margin-left: 20px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: var(--accent-color);
+    }
+}
