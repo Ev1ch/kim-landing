@@ -1,5 +1,6 @@
 @import '../components/navigation';
-@import '../mixins';
+@import '../components/login-button';
+@import '../components/change-lang-select';
 
 .header {
     height: 700px;
@@ -12,18 +13,6 @@
         padding-top: 20px;
         padding-bottom: 20px;
         margin-bottom: 20px;
-
-        .change-lang-select {
-            @include select(false, var(--accent-color));
-        }
-
-        .login-button {
-            @include button(
-                true,
-                var(--contrast-light-color),
-                var(--accent-color)
-            );
-        }
     }
 
     &__logo {
