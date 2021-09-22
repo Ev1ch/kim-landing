@@ -1,9 +1,14 @@
 @import '../components/statistic-table';
 @import '../components/prices-table';
+@import '../components/chart';
 
 .statistic {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    &__row {
+        margin-bottom: 70px;
+    }
 
     &__title {
         text-align: center;
