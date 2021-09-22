@@ -3,7 +3,8 @@
 .early-access {
     position: relative;
     height: 515px;
-    background-color: rgba(var(--dark-color-rgb), 0.5);
+    background-image: url('../assets/images/early-access.jpg');
+    background-size: cover;
 
     &__title {
         margin-bottom: 10px;

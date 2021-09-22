@@ -4,7 +4,8 @@
 
 .header {
     height: 700px;
-    background-color: #ccc;
+    background-image: url('../assets/images/header.jpg');
+    background-size: cover;
 
     &__panel {
         display: flex;
