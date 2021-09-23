@@ -1,24 +1,36 @@
 @import '../components/platform-feature';
 
 .platform-description {
-    background-color: var(--cold-color);
+    &__container {
+        background-color: var(--cold-color);
+    }
 
     &__section {
-        padding: 80px 60px;
+        padding: 80px 22px;
 
         &--fluid {
-            padding-top: 60px;
-            padding-bottom: 60px;
+            padding: 22px 60px 62px 0;
 
             .advantage {
                 &__title {
                     margin-bottom: 20px;
                 }
             }
+
+            .platform-feature {
+                &__image {
+                    width: 540px;
+                    height: 580px;
+                }
+            }
         }
     }
 
     &__divider {
-        background-color: var(--accent-color);
+        height: 1px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba($color: var(--accent-color-rgb), $alpha: 0.3);
     }
 }

@@ -7,3 +7,9 @@
         font: var(--title-font);
     }
 }
+
+.container {
+    box-sizing: border-box;
+    padding-left: 0;
+    padding-right: 0;
+}
