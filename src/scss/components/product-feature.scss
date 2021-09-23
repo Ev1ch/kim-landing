@@ -1,13 +1,14 @@
 @import 'feature-advantages';
 
-.platform-feature {
+.product-feature {
     display: flex;
-    padding: 80px 60px;
+    padding-bottom: 62px;
+    padding-right: 60px;
+    justify-content: space-between;
+    align-items: center;
 
     &__description {
-        margin-left: auto;
-        margin-right: auto;
-        width: 360px;
+        width: 420px;
     }
 
     &__text {
@@ -20,6 +21,7 @@
 
     &__image {
         object-fit: cover;
-        width: 400px;
+        width: 540px;
+        height: 580px;
     }
 }

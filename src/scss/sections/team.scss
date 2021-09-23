@@ -3,6 +3,11 @@
 .team {
     margin-bottom: 110px;
 
+    &__container {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
     &__title {
         color: var(--accent-color);
     }

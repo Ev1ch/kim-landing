@@ -6,8 +6,9 @@
     margin-top: 80px;
     margin-bottom: 80px;
 
-    &__row {
-        margin-bottom: 70px;
+    &__container {
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     &__title {
@@ -16,8 +17,6 @@
     }
 
     &__text {
-        margin-bottom: 40px;
-
         p {
             font: var(--base-font);
             width: 600px;

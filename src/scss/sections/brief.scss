@@ -3,8 +3,10 @@
 .brief {
     height: 526px;
 
-    &__row {
+    &__container {
         background-color: var(--dark-color);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     &__title {

@@ -1,29 +1,10 @@
 @import '../components/platform-feature';
+@import '../components/marketplace-feature';
+@import '../components/product-feature';
 
 .platform-description {
     &__container {
         background-color: var(--cold-color);
-    }
-
-    &__section {
-        padding: 80px 22px;
-
-        &--fluid {
-            padding: 22px 60px 62px 0;
-
-            .advantage {
-                &__title {
-                    margin-bottom: 20px;
-                }
-            }
-
-            .platform-feature {
-                &__image {
-                    width: 540px;
-                    height: 580px;
-                }
-            }
-        }
     }
 
     &__divider {

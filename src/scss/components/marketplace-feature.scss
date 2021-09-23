@@ -1,11 +1,10 @@
 @import 'feature-advantages';
 
-.platform-feature {
+.marketplace-feature {
     display: flex;
     padding: 80px 60px;
 
     &__description {
-        margin-left: auto;
         margin-right: auto;
         width: 360px;
     }

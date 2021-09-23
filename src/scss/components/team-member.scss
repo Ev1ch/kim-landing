@@ -1,4 +1,6 @@
 .team-member {
+    text-align: center;
+
     &__avatar {
         height: 200px;
         border-radius: 50%;
@@ -24,5 +26,11 @@
 
     &__cv {
         color: var(--accent-color);
+    }
+
+    &s {
+        display: grid;
+        grid-template-columns: repeat(4, 200px);
+        gap: 40px;
     }
 }
