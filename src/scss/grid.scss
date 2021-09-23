@@ -6,21 +6,27 @@
     margin-right: auto;
 }
 
-@media screen and (max-width: $breakpoint-lg) {
+@media screen and (max-width: $breakpoint-sm) {
     .container {
-        --container-width: 960px;
+        --container-width: auto;
     }
 }
 
-@media screen and (max-width: $breakpoint-md) {
+@media screen and (min-width: $breakpoint-sm) {
+    .container {
+        --container-width: 540px;
+    }
+}
+
+@media screen and (min-width: $breakpoint-md) {
     .container {
         --container-width: 720px;
     }
 }
 
-@media screen and (max-width: $breakpoint-sm) {
+@media screen and (min-width: $breakpoint-lg) {
     .container {
-        --container-width: 560px; //$container-sm-width;
+        --container-width: 960px;
     }
 }
 
