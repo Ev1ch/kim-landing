@@ -8,6 +8,7 @@
     font: var(--button-font);
     display: inline-block;
     text-decoration: none;
+    user-select: none;
 
     @if $isFilled {
         background-color: $backgroundColor;
