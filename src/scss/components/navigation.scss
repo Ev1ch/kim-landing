@@ -1,6 +1,5 @@
 .navigation {
     display: flex;
-    gap: 40px;
     justify-content: center;
 
     &__link {
@@ -11,6 +10,10 @@
         &--active {
             color: var(--accent-color);
             text-decoration: underline;
+        }
+
+        &:not(:last-of-type) {
+            margin-right: 40px;
         }
     }
 }
