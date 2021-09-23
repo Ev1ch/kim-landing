@@ -1,0 +1,11 @@
+@import '../mixins';
+
+.language-select {
+    outline: none;
+    background-image: url('../assets/icons/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 16px;
+
+    @include select(false, var(--accent-color));
+}

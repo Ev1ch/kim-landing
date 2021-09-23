@@ -1,6 +1,0 @@
-@import '../mixins';
-
-.change-lang-select {
-    outline: none;
-    @include select(false, var(--accent-color));
-}
