@@ -1,6 +1,8 @@
 @import '../components/team-member';
 
 .team {
+    margin-bottom: 110px;
+
     &__title {
         color: var(--accent-color);
     }

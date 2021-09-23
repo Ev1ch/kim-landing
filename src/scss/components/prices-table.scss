@@ -1,4 +1,6 @@
 .prices-table {
+    box-sizing: border-box;
+    height: 300px;
     background-color: var(--light-accent-color);
     padding-top: 30px;
     padding-left: 20px;
@@ -15,8 +17,9 @@
 
     &__row {
         width: 100%;
-        display: flex;
-        flex-basis: 50%;
+        display: grid;
+        grid-template-columns: 214px 196px;
+        justify-content: space-between;
         padding-top: 4px;
         padding-bottom: 9.5px;
 
@@ -37,6 +40,8 @@
     }
 
     &__description {
+        margin-left: auto;
+
         p {
             font: 400 13px var(--base-font-family);
             margin: 0;
