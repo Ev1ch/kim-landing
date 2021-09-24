@@ -3,6 +3,7 @@
     height: 300px;
     background-color: var(--light-accent-color);
     padding: 20px;
+    box-sizing: border-box;
 
     &__row {
         width: 100%;

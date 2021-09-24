@@ -1,5 +1,5 @@
 .sign-up-field {
-    display: grid;
+    display: inline-grid;
     grid-template-columns: 185px 75px;
     width: 260px;
     border: 1px solid var(--accent-color);
