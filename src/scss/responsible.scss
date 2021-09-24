@@ -49,6 +49,10 @@
     .marketplace-feature {
         padding-left: 0;
         padding-right: 0;
+
+        &__image {
+            width: 100%;
+        }
     }
 
     .platform-feature,
