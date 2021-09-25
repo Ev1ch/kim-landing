@@ -1,15 +1,21 @@
 .navigation {
-    z-index: 99;
+    z-index: 999;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
 
-    &__list {
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-    }
+    &--burger {
+        visibility: hidden;
 
-    &__toggle,
-    &__checkbox {
-        display: none;
+        &-active {
+            visibility: visible;
+
+            .navigation__close,
+            .navigation__logo,
+            .header__logo {
+                display: block;
+            }
+        }
     }
 
     &__logo {
@@ -19,14 +25,25 @@
         display: none;
     }
 
-    &__toggle {
-        background-image: url('../assets/icons/menu.svg');
+    &__open,
+    &__close {
+        background-color: initial;
+        border: none;
         background-size: cover;
         top: 20px;
         height: 34px;
         position: absolute;
         width: 34px;
         left: 20px;
+        display: none;
+    }
+
+    &__open {
+        background-image: url('../assets/icons/menu.svg');
+    }
+
+    &__close {
+        background-image: url('../assets/icons/close.svg');
     }
 
     &__link {
