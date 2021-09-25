@@ -12,7 +12,7 @@
         <header class="header">
             <div class="container header__container">
                 <div class="header__panel">
-                    <select name="" id="" class="language-select">
+                    <select class="language-select">
                         <option value="" class="language-select__option">English</option>
                         <option value="" class="language-select__option">Russian</option>
                     </select>
@@ -20,10 +20,20 @@
                     <a href="#" class="login-button">Login</a>
                 </div>
                 <nav class="header__navigation navigation">
-                    <a href="#" class="navigation__link navigation__link--active">What is KARD?</a>
-                    <a href="#" class="navigation__link">ICO Details</a>
-                    <a href="#" class="navigation__link">Roadmap</a>
-                    <a href="#" class="navigation__link">Team</a>
+                    <input type="checkbox" id="navigation__checkbox" class="navigation__checkbox">
+                    <label class="navigation__toggle" for="navigation__checkbox"></label>
+                    <div class="navigation__list">
+                        <img src="assets/images/logo.png" alt="" class="navigation__logo">
+                        <a href="#" class="navigation__link navigation__link--active">What is KARD?</a>
+                        <a href="#" class="navigation__link">ICO Details</a>
+                        <a href="#" class="navigation__link">Roadmap</a>
+                        <a href="#" class="navigation__link">Team</a>
+                        <a href="#" class="login-button">Login</a>
+                        <select class="language-select">
+                            <option class="language-select__option">English</option>
+                            <option class="language-select__option">Russian</option>
+                        </select>
+                    </div>
                 </nav>
             </div>
         </header>

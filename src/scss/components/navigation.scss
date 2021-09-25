@@ -1,6 +1,35 @@
 .navigation {
-    display: flex;
-    justify-content: center;
+    z-index: 99;
+
+    &__list {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__toggle,
+    &__checkbox,
+    .language-select,
+    .login-button {
+        display: none;
+    }
+
+    &__logo {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        display: none;
+    }
+
+    &__toggle {
+        background-image: url('../assets/icons/menu.svg');
+        background-size: cover;
+        top: 20px;
+        height: 34px;
+        position: absolute;
+        width: 34px;
+        left: 20px;
+    }
 
     &__link {
         font: var(--navigation-font);
