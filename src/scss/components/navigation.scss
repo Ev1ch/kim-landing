@@ -8,9 +8,7 @@
     }
 
     &__toggle,
-    &__checkbox,
-    .language-select,
-    .login-button {
+    &__checkbox {
         display: none;
     }
 
@@ -44,5 +42,11 @@
         &:not(:last-of-type) {
             margin-right: 40px;
         }
+    }
+
+    &__footer {
+        display: none;
+        flex-direction: column;
+        gap: 30px;
     }
 }
