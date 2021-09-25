@@ -21,14 +21,3 @@ let teamSwiper = new Swiper('.team-members', {
     observer: true,
     observeParents: true,
 });
-
-// function swiperActivate({ currentTarget: { innerWidth: width } }) {
-//     if (width <= 768) {
-//         if (!isInit) {
-//         }
-//     } else {
-//         teamSwiper.destroy();
-//     }
-// }
-
-// window.addEventListener('load', swiperActivate);
