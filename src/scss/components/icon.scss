@@ -62,4 +62,14 @@
     &-close {
         content: url('../assets/icons/close.svg');
     }
+
+    &-arrow {
+        &-left {
+            content: url('../assets/icons/arrow-left.svg');
+        }
+
+        &-right {
+            content: url('../assets/icons/arrow-right.svg');
+        }
+    }
 }

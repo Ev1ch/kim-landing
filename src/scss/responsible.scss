@@ -298,8 +298,10 @@
         gap: 40px;
     }
 
-    .team-members {
-        overflow: hidden;
+    .team {
+        &__container {
+            padding: 0;
+        }
     }
 
     .footer {
@@ -523,8 +525,10 @@
         height: auto;
     }
 
-    .team-members {
-        overflow: hidden;
+    .team {
+        &__container {
+            padding: 0;
+        }
     }
 
     .footer {
