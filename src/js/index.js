@@ -3,7 +3,24 @@ const Breakpoints = {
     LG: 1440,
 };
 
-const teamSwiper = new Swiper('.team-members', {
+const TeamSelectors = {
+    CONTAINER: '.team-members',
+    PREVIOUS_BUTTON: '.team-members__previous',
+    NEXT_BUTTON: '.team-members__next',
+};
+
+const NavigationSelectors = {
+    CONTAINER: '.navigation',
+    OPEN_BUTTON: '.navigation__open',
+    CLOSE_BUTTON: '.navigation__close',
+};
+
+const NavigationClasses = {
+    BURGER: 'navigation--burger',
+    BURGER_ACTIVE: 'navigation--burger-active',
+};
+
+const TEAM_SWIPER_CONFIG = {
     spaceBetween: 40,
     breakpoints: {
         0: {
@@ -20,35 +37,38 @@ const teamSwiper = new Swiper('.team-members', {
         },
     },
     navigation: {
-        prevEl: '.team-members__previous',
-        nextEl: '.team-members__next',
+        prevEl: TeamSelectors.PREVIOUS_BUTTON,
+        nextEl: TeamSelectors.NEXT_BUTTON,
     },
     observer: true,
     observeParents: true,
-});
+};
 
-const navigationOpenEl = document.querySelector('.navigation__open');
-const navigationCloseEl = document.querySelector('.navigation__close');
+const teamSwiper = new Swiper(TeamSelectors.CONTAINER, TEAM_SWIPER_CONFIG);
+
+const navigationEl = document.querySelector(NavigationSelectors.CONTAINER);
+const navigationOpenEl = document.querySelector(
+    NavigationSelectors.OPEN_BUTTON,
+);
+const navigationCloseEl = document.querySelector(
+    NavigationSelectors.CLOSE_BUTTON,
+);
 
 function toggleNavigation() {
-    const navigationEl = document.querySelector('.navigation');
-
     if (window.innerWidth <= Breakpoints.MD) {
-        navigationEl.classList.add('navigation--burger');
+        navigationEl.classList.add(NavigationClasses.BURGER);
     } else {
-        navigationEl.classList.remove('navigation--burger');
-        navigationEl.classList.remove('navigation--burger-active');
+        navigationEl.classList.remove(NavigationClasses.BURGER);
+        navigationEl.classList.remove(NavigationClasses.BURGER_ACTIVE);
     }
 }
 
 function openNavigation() {
-    const navigationEl = document.querySelector('.navigation');
-    navigationEl.classList.add('navigation--burger-active');
+    navigationEl.classList.add(NavigationClasses.BURGER_ACTIVE);
 }
 
 function closeNavigation() {
-    const navigationEl = document.querySelector('.navigation');
-    navigationEl.classList.remove('navigation--burger-active');
+    navigationEl.classList.remove(NavigationClasses.BURGER_ACTIVE);
 }
 
 navigationOpenEl.addEventListener('click', openNavigation);
