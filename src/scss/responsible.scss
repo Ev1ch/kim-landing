@@ -1,6 +1,6 @@
 @import 'variables';
 
-@media screen and (max-width: $breakpoint-md) {
+@media screen and (max-width: calc(#{$breakpoint-md} - 1px)) {
     body {
         background-size: auto 560px;
         background-position-x: center;
@@ -314,7 +314,7 @@
     }
 }
 
-@media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+@media screen and (min-width: $breakpoint-md) and (max-width: calc(#{$breakpoint-lg} - 1px)) {
     body {
         background-size: auto 800px;
         background-position-x: center;
