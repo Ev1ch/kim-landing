@@ -2,7 +2,7 @@
     height: 38px;
     box-sizing: border-box;
     text-align: center;
-    padding: 7px 17px;
+    padding: 8px 18px;
     color: $fontColor;
     border-radius: 20px;
     font: var(--button-font);
@@ -16,14 +16,15 @@
         background-color: rgba(0, 0, 0, 0);
     }
 
-    border: 3px solid $backgroundColor;
+    border: 2px solid $backgroundColor;
 }
 
 @mixin select($isFilled, $fontColor, $backgroundColor: $fontColor) {
     text-align-last: center;
-    padding: 7px 27px 7px 15px;
+    padding: 8px 28px 8px 16px;
     color: $fontColor;
     border-radius: 20px;
+    height: 38px;
     font: var(--button-font);
     display: inline-block;
     list-style-type: none;
@@ -45,5 +46,5 @@
         background-color: rgba(0, 0, 0, 0);
     }
 
-    border: 3px solid $backgroundColor;
+    border: 2px solid $backgroundColor;
 }
