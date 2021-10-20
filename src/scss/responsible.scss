@@ -305,7 +305,12 @@
 
     .team {
         &__container {
-            padding: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .team-members {
+            justify-content: center;
         }
     }
 
@@ -556,8 +561,8 @@
     }
 
     .team {
-        &__container {
-            padding: 0;
+        .team-members {
+            justify-content: space-between;
         }
     }
 

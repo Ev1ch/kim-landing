@@ -20,32 +20,6 @@ const NavigationClasses = {
     BURGER_ACTIVE: 'navigation--burger-active',
 };
 
-const TEAM_SWIPER_CONFIG = {
-    spaceBetween: 40,
-    breakpoints: {
-        0: {
-            slidesPerGroup: 1,
-            slidesPerView: 1,
-        },
-        [Breakpoints.MD]: {
-            slidesPerGroup: 2,
-            slidesPerView: 2,
-        },
-        [Breakpoints.LG]: {
-            slidesPerGroup: 4,
-            slidesPerView: 4,
-        },
-    },
-    navigation: {
-        prevEl: TeamSelectors.PREVIOUS_BUTTON,
-        nextEl: TeamSelectors.NEXT_BUTTON,
-    },
-    observer: true,
-    observeParents: true,
-};
-
-const teamSwiper = new Swiper(TeamSelectors.CONTAINER, TEAM_SWIPER_CONFIG);
-
 const navigationEl = document.querySelector(NavigationSelectors.CONTAINER);
 const navigationOpenEl = document.querySelector(
     NavigationSelectors.OPEN_BUTTON,
