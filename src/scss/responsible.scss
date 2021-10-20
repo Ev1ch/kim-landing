@@ -154,6 +154,9 @@
 
         &__image {
             width: 100%;
+            object-fit: cover;
+            object-position: 0 0;
+            height: 84vw;
         }
 
         &__description {
@@ -433,6 +436,13 @@
         &__description,
         &__image {
             width: 100%;
+        }
+
+        &__image {
+            width: 100%;
+            object-fit: cover;
+            object-position: 0 0;
+            height: 500px;
         }
 
         .feature-advantages {
